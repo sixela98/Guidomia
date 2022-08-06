@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">GUIDOMIA</string>
+    <string name="tacoma_description">Image of Tacoma 2021</string>
+    <string name="tacoma_2021">Tacoma 2021</string>
+    <string name="slogan">Get your\'s now</string>
 </resources>
