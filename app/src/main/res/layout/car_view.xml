@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="416dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="-10dp"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/carImageView"
+        android:layout_width="113dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/car_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/alpine_roadster" />
+
+    <TextView
+        android:id="@+id/carNameTextView"
+        android:layout_width="154dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/carImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Alpine roadster" />
+
+    <TextView
+        android:id="@+id/carPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/carImageView"
+        app:layout_constraintTop_toBottomOf="@+id/carNameTextView"
+        tools:text="Price: 120k" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="-10dp"
+        android:clickable="false"
+        android:contentDescription="@string/rating"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/light_gray"
+        android:progressTint="@color/orange"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+        android:stepSize="1.0"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/carImageView"
+        app:layout_constraintTop_toBottomOf="@+id/carPriceTextView" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="4px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        android:layout_marginTop="10dp"
+        android:background="@color/orange"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

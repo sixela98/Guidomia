@@ -23,17 +23,15 @@ data class Car(
     var rating: Int,
     val prosList: JSONArray,
     val consList: JSONArray,
-    val imageName: String
+    val imageId: Int
 ) {
     /**
      *   Initialize the prices to be in $k format, initialize the dynamic lists for pros and cons, set the image ID to display
      */
-    init {
-        var customerPriceString = "${customerPrice % 1000}k"
-        var marketPriceString = "${marketPrice % 1000}k"
-        var prosMutableList: MutableList<String> = setMutableList(prosList)
-        var consMutableList: MutableList<String> = setMutableList(consList)
-    }
+    var customerPriceString: String = "${customerPrice % 1000}k"
+    var marketPriceString = "${marketPrice % 1000}k"
+    var prosMutableList: MutableList<String> = setMutableList(prosList)
+    var consMutableList: MutableList<String> = setMutableList(consList)
 
     private fun setMutableList(arr: JSONArray): MutableList<String> {
         var array: MutableList<String> = mutableListOf()
