@@ -1,24 +1,22 @@
 package com.example.guidomia
 
-import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.guidomia.adapter.CarAdapter
 import com.example.guidomia.data.Datasource
-import com.example.guidomia.model.Car
-import org.json.JSONArray
-import java.io.IOException
-import java.lang.reflect.Field
+
 
 class MainActivity : AppCompatActivity() {
+    // Car adapter to be used for RecycleView
     private lateinit var adapter: CarAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Load the data set from json file and link it with the adapter
         val dataSet = Datasource().loadData(this)
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -32,10 +30,8 @@ class MainActivity : AppCompatActivity() {
 
 /**
  * TODO:
- * 1. Fix price showing 0.0 instead of the right value
- * 2. Fix rating
- * 3. Fix UI (gray background)
- * 4. TESTING!!!!
+ * 1. Fix UI (gray background)
+ * 2. TESTING!!!!
  */
 
 

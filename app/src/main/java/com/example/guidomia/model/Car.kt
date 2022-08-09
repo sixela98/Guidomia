@@ -12,8 +12,10 @@ import java.lang.reflect.Field
  *   the [customerPrice],
  *   the [marketPrice],
  *   the [rating],
- *   a [prosList] and
- *   a [consList] of a car
+ *   the [prosList],
+ *   the [consList],
+ *   the [name] and
+ *   the [imageId] of a car
  */
 data class Car(
     var model: String,
@@ -23,13 +25,14 @@ data class Car(
     var rating: Int,
     val prosList: JSONArray,
     val consList: JSONArray,
+    val name: String,
     val imageId: Int
 ) {
     /**
      *   Initialize the prices to be in $k format, initialize the dynamic lists for pros and cons, set the image ID to display
      */
-    var customerPriceString: String = "${customerPrice % 1000}k"
-    var marketPriceString = "${marketPrice % 1000}k"
+    var customerPriceString: String = "${customerPrice/1000.0}k"
+    var marketPriceString = "${marketPrice/1000.0}k"
     var prosMutableList: MutableList<String> = setMutableList(prosList)
     var consMutableList: MutableList<String> = setMutableList(consList)
 

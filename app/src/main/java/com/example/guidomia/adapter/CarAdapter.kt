@@ -11,6 +11,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.guidomia.R
 import com.example.guidomia.model.Car
 
+/**
+ *  Car adapter to display the RecycleView.
+ *  Show() function sets up the view's components with the car data
+ *  onCreateViewHolder, onBindViewHolder and getItemCount are overridden with their respective implementation
+ */
+
 class CarAdapter(private val context: Context, private val dataset: List<Car>) : RecyclerView.Adapter<CarAdapter.CarViewHolder>() {
 
     class CarViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
@@ -21,11 +27,10 @@ class CarAdapter(private val context: Context, private val dataset: List<Car>) :
 
         fun show(car: Car) {
             carImage.setImageResource(car.imageId)
-            carName.text = car.model
+            carName.text = car.name
             val priceString = "Price: ${car.customerPriceString}"
             price.text = priceString
-            rating.rating = car.rating.toFloat()
-            println(car.toString())
+            rating.rating = car.rating.toFloat() - 1.0F
         }
     }
 
@@ -37,7 +42,6 @@ class CarAdapter(private val context: Context, private val dataset: List<Car>) :
 
     override fun onBindViewHolder(holder: CarViewHolder, position: Int) {
         val item: Car = dataset[position]
-        println(item.toString())
         holder.show(item)
     }
 

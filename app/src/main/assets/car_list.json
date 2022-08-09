@@ -12,7 +12,8 @@
       "Jame Bond would love to steal that car"
     ],
     "rating": 5,
-    "name": "Alpine roadster"
+    "name": "Alpine roadster",
+    "image": "alpine_roadster"
   },
   {
     "consList": [
@@ -27,7 +28,8 @@
       "Good sound system"
     ],
     "rating": 5,
-    "name": "Range Rover"
+    "name": "Range Rover",
+    "image": "range_rover"
   },
   {
     "consList": [
@@ -45,7 +47,8 @@
       "The city must have"
     ],
     "rating": 5,
-    "name": "BMW 330i"
+    "name": "BMW 330i",
+    "image": "bmw_330i"
   },
   {
     "consList": [
@@ -58,6 +61,7 @@
     "model": "GLE coupe",
     "prosList": [],
     "rating": 5,
-    "name": "Mercedes benz"
+    "name": "Mercedes benz",
+    "image": "mercedez_benz_glc"
   }
 ]
