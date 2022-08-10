@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="15dp">
+    android:layout_height="130dp">
 
     <View
         android:id="@+id/background"
@@ -32,8 +31,8 @@
 
     <TextView
         android:id="@+id/carNameTextView"
-        android:layout_width="154dp"
-        android:layout_height="21dp"
+        android:layout_width="193dp"
+        android:layout_height="27dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:textColor="@color/text"
@@ -48,7 +47,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
         android:textColor="@color/text"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/carImageView"
@@ -74,10 +72,11 @@
 
     <View
         android:id="@+id/line"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/background"
         android:layout_marginTop="15dp"
+        android:layout_marginStart="50dp"
         android:background="@color/orange"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
