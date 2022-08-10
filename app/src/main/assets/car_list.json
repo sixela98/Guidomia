@@ -1,0 +1,67 @@
+[
+  {
+    "consList": [
+      "Sometime explode"
+    ],
+    "customerPrice": 120000.0,
+    "make": "Alpine",
+    "marketPrice": 225000.0,
+    "model": "Roadster",
+    "prosList": [
+      "This car is so fast",
+      "Jame Bond would love to steal that car"
+    ],
+    "rating": 5,
+    "name": "Alpine roadster",
+    "image": "alpine_roadster"
+  },
+  {
+    "consList": [
+      "Bad direction"
+    ],
+    "customerPrice": 65000.0,
+    "make": "Land Rover",
+    "marketPrice": 125000.0,
+    "model": "Range Rover",
+    "prosList": [
+      "You can go everywhere",
+      "Good sound system"
+    ],
+    "rating": 5,
+    "name": "Range Rover",
+    "image": "range_rover"
+  },
+  {
+    "consList": [
+      "You can heard the engine over children cry at the back",
+      "",
+      "You may lose this one if you divorce"
+    ],
+    "customerPrice": 55000.0,
+    "make": "BMW",
+    "marketPrice": 55900.0,
+    "model": "330i",
+    "prosList": [
+      "Your average business man car",
+      "Can bring the family home safely",
+      "The city must have"
+    ],
+    "rating": 5,
+    "name": "BMW 330i",
+    "image": "bmw_330i"
+  },
+  {
+    "consList": [
+      "You may lose a wheel",
+      "Expensive maintenance"
+    ],
+    "customerPrice": 54000.0,
+    "make": "Mercedes Benz",
+    "marketPrice": 85900.0,
+    "model": "GLE coupe",
+    "prosList": [],
+    "rating": 5,
+    "name": "Mercedes benz",
+    "image": "mercedez_benz_glc"
+  }
+]
