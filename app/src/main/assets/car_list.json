@@ -24,7 +24,8 @@
     "marketPrice": 125000.0,
     "model": "Range Rover",
     "prosList": [
-      "You can go everywhere",
+      "4 wheel drive",
+      "Disk brake",
       "Good sound system"
     ],
     "rating": 5,
@@ -34,7 +35,6 @@
   {
     "consList": [
       "You can heard the engine over children cry at the back",
-      "",
       "You may lose this one if you divorce"
     ],
     "customerPrice": 55000.0,

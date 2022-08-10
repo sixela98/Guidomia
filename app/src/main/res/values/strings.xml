@@ -5,4 +5,6 @@
     <string name="slogan">Get your\'s now</string>
     <string name="rating">ratings</string>
     <string name="car_image">car image</string>
+    <string name="pros">Pros:</string>
+    <string name="cons">Cons:</string>
 </resources>

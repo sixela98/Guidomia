@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="130dp">
+    android:layout_height="wrap_content">
 
     <View
         android:id="@+id/background"
         android:layout_width="416dp"
         android:layout_height="110dp"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="15dp"
         android:background="@color/light_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
         tools:srcCompat="@drawable/alpine_roadster" />
 
     <TextView
@@ -39,7 +39,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/carImageView"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
         tools:text="Alpine roadster" />
 
     <TextView
@@ -59,7 +59,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="-10dp"
-        android:clickable="false"
+        android:isIndicator="true"
         android:contentDescription="@string/rating"
         android:progressBackgroundTint="@color/light_gray"
         android:progressTint="@color/orange"
@@ -70,13 +70,23 @@
         app:layout_constraintStart_toStartOf="@+id/carImageView"
         app:layout_constraintTop_toBottomOf="@+id/carPriceTextView" />
 
+    <include
+        android:id="@+id/carExpandedView"
+        layout="@layout/car_expanded_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background"
+        android:visibility="gone"/>
+
     <View
         android:id="@+id/line"
         android:layout_width="300dp"
         android:layout_height="2dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/carExpandedView"
         android:layout_marginTop="15dp"
         android:layout_marginStart="50dp"
         android:background="@color/orange"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.example.guidomia
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers.*
@@ -24,5 +25,12 @@ class MainActivityTest {
     fun test_scrollToPosition() {
         onView(withId(R.id.recyclerView)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(0))
         onView(withText("Alpine roadster")).check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun test_expandItem() {
+        onView(withId(R.id.recyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(1, click()))
+        onView(withId(R.id.recyclerView)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(1))
+        onView(withText("4 wheel drive")).check(matches(isDisplayed()))
     }
 }

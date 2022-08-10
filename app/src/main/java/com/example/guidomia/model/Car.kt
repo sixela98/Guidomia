@@ -11,8 +11,8 @@ import org.json.JSONArray
  *   the [rating],
  *   the [prosList],
  *   the [consList],
- *   the [name] and
- *   the [imageId] of a car
+ *   the [name],
+ *   the [imageId] of a car.
  */
 data class Car(
     var model: String,
