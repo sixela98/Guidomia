@@ -23,6 +23,14 @@ class MainActivity : AppCompatActivity() {
         adapter = CarAdapter(this, dataSet)
         recyclerView.adapter = adapter
         recyclerView.setHasFixedSize(true)
+        adapter.setOnItemClickListener(object: CarAdapter.onItemClickListener {
+            override fun onItemClick(position: Int) {
+                val oldExpanded = adapter.itemToExpand
+                adapter.itemToExpand = position
+                adapter.notifyItemChanged(oldExpanded)
+                adapter.notifyItemChanged(position)
+            }
+        })
     }
 
 }
