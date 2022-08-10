@@ -28,11 +28,4 @@ class MainActivity : AppCompatActivity() {
 }
 
 
-/**
- * TODO:
- * 1. Fix UI (gray background)
- * 2. TESTING!!!!
- */
-
-
 

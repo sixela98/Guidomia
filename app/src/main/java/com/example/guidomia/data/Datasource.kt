@@ -36,7 +36,7 @@ class Datasource {
         return carArrayList
     }
 
-    private fun getJsonDataFromAsset(context: Context, fileName: String): String? {
+    fun getJsonDataFromAsset(context: Context, fileName: String): String? {
         val jsonString: String
         try {
             jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }

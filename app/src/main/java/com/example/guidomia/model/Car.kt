@@ -1,9 +1,6 @@
 package com.example.guidomia.model
 
-import android.util.Log
-import com.example.guidomia.R
 import org.json.JSONArray
-import java.lang.reflect.Field
 
 /**
  *   Car class to hold
